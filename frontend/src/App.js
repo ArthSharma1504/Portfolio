@@ -1,19 +1,19 @@
-// App.js
 import React from 'react';
+import AnimatedSection from './components/AnimatedSection';
+import ContactForm from './components/ContactForm';
+import Header from './components/Header';
+import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 import './App.css';
-import ContactForm, { AnimatedSection } from './ContactForm'; // Importing both components
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>My Portfolio</h1>
-      </header>
-      
-      <main>
-        <AnimatedSection /> {/* This will show the animated welcome message */}
-        <ContactForm />     {/* This will show the contact form */}
-      </main>
+      <Header />
+      <AnimatedSection />
+      <Portfolio />
+      <ContactForm />
+      <Footer />
     </div>
   );
 }
